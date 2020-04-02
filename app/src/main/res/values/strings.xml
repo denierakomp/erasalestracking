@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ERAKOMP</string>
+    <string name="nameuser">Nama Lengkap</string>
+    <string name="loginusername">Nama Login</string>
+    <string name="noojol">No Kendaraan</string>
+    <string name="emailuser">Alamat e-mail</string>
+    <string name="telpuser">No HP</string>
+    <string name="passworduser">Password</string>
+    <string name="title_activity_maps">Maps</string>
+    <string name="edituser">Rubah</string>
+    <string name="saveuser">Simpan</string>
+
+    <string-array name="groupby">
+        <item>Pilih Group :</item>
+        <item>Adi</item>
+        <item>Budiman</item>
+        <item>Darmawan</item>
+        <item>Denny S.</item>
+        <item>Enrico</item>
+        <item>Guntur</item>
+        <item>Hans</item>
+        <item>Ibnu</item>
+        <item>Septi</item>
+    </string-array>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true"
+    android:paddingTop="1dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:padding="2dp">
+        <TextView
+            android:layout_marginTop="0dp"
+            android:id="@+id/TxtRating"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:maxLength="30"
+            android:text="Rating"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+
+            android:textSize="30sp"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="1dp">
+
+            <ImageView
+                android:id="@+id/IVUserGaleri"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/ic_launcher" />
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="1dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/TxtUserID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="0dp"
+                    />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/TxtSalesPhoto"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:visibility="gone"
+                    />
+
+
+                <TextView
+                    android:id="@+id/TxtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="10dp"
+                    android:text="Nama Sales"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <TextView
+                    android:id="@+id/TxtTglLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="Last Login"
+                    android:visibility="visible"
+                    android:textSize="12dp"
+                    android:textAlignment="center"
+                    />
+
+                <CheckBox
+                    android:id="@+id/CekBox_AsManager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="jadikan akses manager"
+                    android:textColor="@color/colorRed"
+                    />
+
+                <TextView
+                    android:id="@+id/TxtLeadByID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="Lead By ID"
+                    android:visibility="visible"
+                    android:textSize="15dp"
+
+                    />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/groupby"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </TableLayout>
+
+</androidx.cardview.widget.CardView>
